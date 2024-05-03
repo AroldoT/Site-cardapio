@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  header {
+    background-image: linear-gradient(to bottom, #ff930f, #fff95b);
+    color: #731d02;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  h1 {
+    padding: 1rem;
+  }
+  
+  .comida {
+    font-family: TypoUpright BT;
+    font-size: 65px;
+  }
+  
+  .encantada {
+    font-family: philosopher;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    background-image: url(https://images.pexels.com/photos/7245483/pexels-photo-7245483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 100%;
+    width: 425px;
+    height: 212px;
+    display: flex;
+    flex-direction: column-reverse;
+    color: #731d02;
+    font-size: 1rem;
+    font-family: Segoe Script;
+    
+  }
+
+  div section {
+    display: grid;
+    grid-template-columns: 83px 80px 90px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 25px;
+    padding-top: 1rem;
+  }
+
+  main div h2 {
+    padding-left: 1rem;
+
+  }
+
+.content {
+    height: 160px;
+    width: 140px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0%;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+.navegation {
+    display: flex;    
+    gap: 8px;
+    padding: 2rem 1rem;
+}
+
+.bar { 
+    display: flex;
+    text-shadow: 2px 2px 10px #731d02;
+    font-size: medium;
+    font-family: philosopher;
+    color: green;
+    cursor: pointer;
+    transition: 0.6s
+}   
+
+.bar:hover {
+    background-color: white;
+}
+
+input {
+    display: none;
+}
+
+  .btn-pedir {
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    font-size: large;
+    background-color: #ff930f;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-family: philosopher;
+    color: #0c4510;
+}
+
+  footer {
+    background-image: linear-gradient(to top, #ff930f, #fff95b);
+    color: #731d02;
+    width: 425px;
+    border-radius: 0 0 20px 20px;
+    padding: 1rem;
+    font-size: 15px;
+    font-family: Kaufmann BT;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .retornar {
+    text-decoration: none;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    border-radius: 20px;
+    background-color: #ff930f;
+    font-size: 1.2rem;
+    font-family: philosopher;
+    color: #0c4510;
+    box-shadow: 3px 3px 10px #731d02;
+    margin: 2rem;
+    height: 25px;
+  }
+
+  .escolher {
+    text-decoration: none;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    border-radius: 20px;
+    background-color: #ff930f;
+    font-size: 1.4rem;
+    font-family: philosopher;
+    color: #0c4510;
+    box-shadow: 3px 3px 10px #731d02;
+    height: 25px;
+  }
+
+  footer div {
+    display: flex;
+    gap: 25px;
+    padding: 1rem;
+  }
+
+  footer div a img {
+    width: 32px;
+  }
+
+  @media screen and (max-width: 375px){
+    .banner {
+        width: 375px;
+    }
+    header {
+        width: 375px;
+    }
+    footer {
+        width: 375px;
+    }
+    .accordion-item {
+        width: 375px;
+      }
+}
+
+  @media screen and (max-width: 320px){
+    .banner {
+        width: 320px;
+    }
+    header {
+        width: 320px;
+    }
+    main > div {
+        width: 320px;
+    }
+    footer {
+        width: 320px;
+    }
+    .accordion-item {
+        width: 320px;
+      }
+  }

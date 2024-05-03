@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  header {
+    background-image: linear-gradient(to bottom, #ff930f, #fff95b);
+    color: #731d02;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  h1 {
+    padding: 1rem;
+  }
+  
+  .comida {
+    font-family: TypoUpright BT;
+    font-size: 65px;
+  }
+  
+  .encantada {
+    font-family: philosopher;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    background-image: url(https://images.pexels.com/photos/8963375/pexels-photo-8963375.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: 100%;
+    width: 425px;
+    height: 275px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: #731d02;
+    font-size: 1rem;
+    font-family: Segoe Script;
+    
+  }
+
+  h2 {
+    margin-left: -14px;
+    margin-bottom: 7px;
+  }
+
+.linha {
+    width: 300px;
+    border-bottom: 2px solid rgba(192, 192, 192, 0.801);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+  main section {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 1rem;
+  }
+
+  main div h2 {
+    padding-left: 1rem;
+  }
+  
+  .escolhas {
+    width: 300px;
+    font-family: philosopher;
+  } 
+
+  main section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    main  div h4 {
+    list-style: none;
+    color: #0c4510 !important;
+    font-size: 20px !important;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section img {
+    width: 80px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  h4 {
+    font-family: philosopher;
+    color: #0c4510 !important;
+    font-size: 20px !important;
+  }
+
+  .linha {
+    width: 300px;
+    border-bottom: 2px solid rgba(192, 192, 192, 0.801);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+  .btn-pedir {
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    font-size: large;
+    background-color: #ff930f;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-family: philosopher;
+    color: #0c4510;
+}
+
+  footer {
+    background-image: linear-gradient(to top, #ff930f, #fff95b);
+    color: #731d02;
+    width: 425px;
+    border-radius: 0 0 20px 20px;
+    padding: 1rem;
+    font-size: 15px;
+    font-family: Kaufmann BT;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .retornar {
+    text-decoration: none;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    border-radius: 20px;
+    background-color: #ff930f;
+    font-size: 1.2rem;
+    font-family: philosopher;
+    color: #0c4510;
+    box-shadow: 3px 3px 10px #731d02;
+    margin: 2rem;
+  }
+
+  footer div {
+    display: flex;
+    gap: 25px;
+    padding: 1rem;
+  }
+
+  footer div a img {
+    width: 32px;
+  }
+
+  @media screen and (max-width: 375px){
+    .banner {
+        width: 375px;
+    }
+    header {
+        width: 375px;
+    }
+    main > div {
+        width: 375px;
+    }
+    footer {
+        width: 375px;
+    }
+    .accordion-item {
+        width: 375px;
+      }
+}
+
+  @media screen and (max-width: 320px){
+    .banner {
+        width: 320px;
+    }
+    header {
+        width: 320px;
+    }
+    main > div {
+        width: 320px;
+    }
+    footer {
+        width: 320px;
+    }
+    .accordion-item {
+        width: 320px;
+      }
+  }
